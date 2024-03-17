@@ -1,0 +1,11 @@
+asyncpg==0.29.0
+databases[asyncpg]==0.9.0
+fastapi==0.110.0
+psycopg2-binary==2.9.9
+SQLAlchemy==2.0.28
+uvicorn==0.28.0
+aiohttp==3.9.3
+
+# dev
+pytest==8.1.1
+httpx==0.27.0
