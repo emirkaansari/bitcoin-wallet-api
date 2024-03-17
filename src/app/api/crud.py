@@ -51,6 +51,7 @@ async def create_transfer(payload: float):
     amount_btc = await bitcoin.convert_eur_to_btc(payload.amount)
     if amount_btc < 0.00001:
         raise HTTPException(status_code=400, detail="Transfers can't be less than 0.00001 BTC.")
+
     remaining_amount = amount_btc
 
     query = select(transaction) \
